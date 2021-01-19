@@ -136,6 +136,15 @@ iframe {
 
 }
 
+#before{
+    width: auto;
+    float: left;
+}
+
+#after{
+    float: right;
+    width: auto;
+}
 
 #comparison_img{
     width: 100%;
