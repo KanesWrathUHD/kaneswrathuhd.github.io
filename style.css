@@ -99,12 +99,13 @@ footer {
 
 .comparison,
 .downloads,
-.features {
+.features, 
+{
     margin-top: 150px;
 }
 
 .features,
-.comparison {
+.comparison, footer {
     margin-top: 150px;
     margin-bottom: 150px;
 }
@@ -140,10 +141,6 @@ iframe {
     width: 100%;
 }
 
-footer {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 
 
