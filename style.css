@@ -1,0 +1,285 @@
+body {
+    background-color: #0B0B0D;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Syncopate', sans-serif;
+    letter-spacing: 3px;
+    line-height: 135%;
+}
+
+h4,
+h5,
+h6,
+p {
+    font-family: 'Public Sans', sans-serif;
+    line-height: 155%;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+header h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 32px;
+    padding-top: 20px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+p,
+button {
+    font-size: 18px;
+}
+
+
+
+
+#recommendation_text,
+footer p {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#zone_trooper_text,
+#command_and_online,
+#vram_text {
+    text-align: left;
+}
+
+footer p,
+#comparison_text {
+    text-align: center;
+}
+
+
+
+/* ---------- LAYOUT ---------- */
+
+.video,
+.comparison,
+.downloads,
+footer {
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video,
+.comparison,
+.downloads,
+.features {
+    margin-top: 200px;
+}
+
+.features,
+.comparison {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+
+
+.video {
+    margin-bottom: 100px;
+}
+
+.video_responsive_container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+/* --------- */
+
+/* ---------- HEADER ---------- */
+
+header {
+    height: 100vh;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* ---------- GRIDS ---------- */
+
+.features {
+    width: 90%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 150px;
+    grid-row-gap: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.features img {
+    margin-top: 20px;
+}
+
+.features_item:nth-child(1) {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.features_item:nth-child(2) {
+    grid-area: 2 / 2 / 4 / 3;
+}
+
+.features_item:nth-child(3) {
+    grid-area: 3 / 1 / 5 / 2;
+}
+
+.features_item:nth-child(4) {
+    grid-area: 4 / 2 / 6 / 3;
+}
+
+.features_item {}
+
+.features_item img {
+    width: 100%;
+}
+
+/* --------- */
+
+.downloads_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.downloads_grid_item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.downloads_grid_item:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.downloads_grid_item:nth-child(3) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.downloads_grid_item:nth-child(4) {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.downloads_grid_item:nth-child(6) {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.downloads_grid_item:nth-child(6) {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.downloads_grid_item {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    height: auto;
+}
+
+/* --------- */
+
+.zone_trooper_skins {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    padding-top: 50px;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+button {
+    padding: 15px 20px 15px 20px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    font-size: bold;
+    margin-top: 10px;
+    font-weight: 700;
+
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
