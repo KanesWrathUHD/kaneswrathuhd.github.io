@@ -1,5 +1,6 @@
 body {
     background-color: #0B0B0D;
+    overflow: none;
 }
 
 /* ---------- TYPOGRAPHY ---------- */
@@ -25,7 +26,7 @@ h5,
 h6,
 p {
     font-family: 'Public Sans', sans-serif;
-    line-height: 155%;
+    line-height: 165%;
 }
 
 h1 {
@@ -59,7 +60,6 @@ p,
 button {
     font-size: 18px;
 }
-
 
 
 
@@ -97,24 +97,21 @@ footer {
     margin-right: auto;
 }
 
-.video,
 .comparison,
 .downloads,
 .features {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .features,
 .comparison {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 
 
-.video {
-    margin-bottom: 100px;
-}
+
 
 .video_responsive_container {
     position: relative;
@@ -138,6 +135,11 @@ iframe {
 
 }
 
+
+#comparison_img{
+    width: 100%;
+}
+
 footer {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -154,7 +156,6 @@ header {
     background-image: url(img/background.png);
     background-size: cover;
     background-position: bottom;
-    background-repeat: no-repeat;
 }
 
 
@@ -283,3 +284,13 @@ button:hover {
     background-color: white;
     color: black;
 }
+
+
+
+
+
+
+
+/* ---------- MEDIA QUERY ---------- */
+
+
