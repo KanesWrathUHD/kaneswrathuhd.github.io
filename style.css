@@ -95,10 +95,9 @@ button {
     border-color: white;
     border-width: 1px;
     color: white;
-    font-size: bold;
     margin-top: 10px;
     font-weight: 700;
-
+    font-family: 'Oxanium', cursive;
 }
 
 button:hover {
