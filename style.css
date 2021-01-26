@@ -1,6 +1,8 @@
 body {
     background-color: #0B0B0D;
     overflow: none;
+    font-family: 'Oxanium', cursive;
+    margin: 0 auto;
 }
 
 /* ---------- TYPOGRAPHY ---------- */
@@ -16,7 +18,6 @@ h4 {
 h1,
 h2,
 h3 {
-    font-family: 'Syncopate', sans-serif;
     letter-spacing: 3px;
     line-height: 135%;
 }
@@ -25,7 +26,6 @@ h4,
 h5,
 h6,
 p {
-    font-family: 'Public Sans', sans-serif;
     line-height: 165%;
 }
 
@@ -38,13 +38,6 @@ h2 {
     text-align: center;
 }
 
-header h2 {
-    text-align: center;
-    font-weight: 100;
-    font-size: 32px;
-    padding-top: 20px;
-    letter-spacing: 10px;
-}
 
 h3 {
     font-size: 32px;
@@ -62,6 +55,14 @@ button {
 }
 
 
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* ---------- ALLIGNMENT ---------- */
 
 #recommendation_text,
 footer p {
@@ -83,10 +84,33 @@ footer p,
     text-align: center;
 }
 
-a{
-    text-decoration: none;
+
+/* ---------- GENERAL ---------- */
+
+
+button {
+    padding: 15px 20px 15px 20px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    font-size: bold;
+    margin-top: 10px;
+    font-weight: 700;
+
 }
 
+button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+img,
+button,
+.downloads_grid_item {
+    border-radius: 5px;
+}
 
 
 /* ---------- LAYOUT ---------- */
@@ -94,7 +118,8 @@ a{
 .video,
 .comparison,
 .downloads,
-footer {
+footer,
+.donate {
     width: 90%;
     max-width: 900px;
     margin-left: auto;
@@ -103,13 +128,15 @@ footer {
 
 .comparison,
 .downloads,
-.features, 
-{
+.features,
+    {
     margin-top: 150px;
 }
 
 .features,
-.comparison, footer {
+.comparison,
+footer,
+.donate {
     margin-top: 150px;
     margin-bottom: 150px;
 }
@@ -117,6 +144,29 @@ footer {
 
 
 
+/* ---------- HEADER ---------- */
+
+header {
+    height: 100vh;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- VIDEO ---------- */
 
 .video_responsive_container {
     position: relative;
@@ -140,46 +190,17 @@ iframe {
 
 }
 
-#before{
+#before {
     width: auto;
     float: left;
 }
 
-#after{
+#after {
     float: right;
     width: auto;
 }
 
-#comparison_img{
-    width: 100%;
-}
-
-
-
-
-/* --------- */
-
-/* ---------- HEADER ---------- */
-
-header {
-    height: 100vh;
-    background-image: url(img/background.png);
-    background-size: cover;
-    background-position: bottom;
-}
-
-
-
-.logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-
-/* ---------- GRIDS ---------- */
+/* ---------- FEATURES ---------- */
 
 .features {
     width: 90%;
@@ -187,7 +208,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 150px;
+    grid-column-gap: 10%;
     grid-row-gap: 150px;
     margin-left: auto;
     margin-right: auto;
@@ -220,7 +241,46 @@ header {
     width: 100%;
 }
 
-/* --------- */
+
+/* ---------- COMPARISON ---------- */
+
+
+#comparison_img {
+    width: 100%;
+}
+
+
+/* ---------- DONATE ---------- */
+
+.gofundme {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    height: auto;
+}
+
+
+.gofundme h3 {
+    padding-top: 50px;
+}
+
+#gofundme_button:hover {
+    background-color: #02A95C;
+}
+
+.supporters_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+/* ---------- DOWNLOADS ---------- */
+
+
 
 .downloads_grid {
     display: grid;
@@ -276,24 +336,9 @@ header {
 }
 
 
-/* ---------- BUTTON ---------- */
+/* ---------- FOOTER ---------- */
 
-button {
-    padding: 15px 20px 15px 20px;
-    background-color: transparent;
-    border-style: solid;
-    border-color: white;
-    color: white;
-    font-size: bold;
-    margin-top: 10px;
-    font-weight: 700;
 
-}
-
-button:hover {
-    background-color: white;
-    color: black;
-}
 
 
 
@@ -304,3 +349,9 @@ button:hover {
 /* ---------- MEDIA QUERY ---------- */
 
 
+@media only screen and (max-width: 700px) {
+
+    .downloads_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
