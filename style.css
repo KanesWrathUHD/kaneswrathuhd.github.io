@@ -136,6 +136,9 @@ footer,
     margin-bottom: 150px;
 }
 
+.video{
+    margin-bottom: 150px;
+}
 
 
 
@@ -204,7 +207,7 @@ iframe {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 100px;
+    grid-column-gap: 7.5%;
     grid-row-gap: 150px;
     margin-left: auto;
     margin-right: auto;
@@ -231,7 +234,9 @@ iframe {
     grid-area: 4 / 2 / 6 / 3;
 }
 
-.features_item {}
+.features_item p{
+    padding-bottom: 25px;
+}
 
 .features_item img {
     width: 100%;
@@ -269,7 +274,7 @@ iframe {
 
 .supporters_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 25px;
 }
@@ -346,7 +351,7 @@ iframe {
 /* ---------- MEDIA QUERY ---------- */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     h1 {
         font-size: 36px;
     }
@@ -374,7 +379,7 @@ iframe {
 
 
     #logo {
-        height: 200px;
+        height: 225px;
     }
 
 
