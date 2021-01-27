@@ -163,6 +163,7 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 350px;
 }
 
 /* ---------- VIDEO ---------- */
@@ -348,9 +349,18 @@ iframe {
 /* ---------- MEDIA QUERY ---------- */
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
+    
+    
+    
 
-    .downloads_grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
+
+#logo {
+    height: 250px;
+}
+    
+    
+    
+    
+    
 }
