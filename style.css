@@ -272,12 +272,7 @@ iframe {
     background-color: #02A95C;
 }
 
-.supporters_grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 25px;
-}
+
 
 
 /* ---------- DOWNLOADS ---------- */
@@ -424,12 +419,6 @@ iframe {
         grid-template-rows: repeat(2, 1fr);
     }
 
-
-    .supporters_grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
 
     footer p,
     #comparison_text {
