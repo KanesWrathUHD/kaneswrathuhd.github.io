@@ -89,7 +89,7 @@ footer p,
 
 
 button {
-    padding: 15px 20px 15px 20px;
+    padding: 17px 20px 15px 20px;
     background-color: transparent;
     border-style: solid;
     border-color: white;
@@ -107,8 +107,8 @@ button:hover {
 
 img,
 button,
-.downloads_grid_item {
-    border-radius: 5px;
+.downloads_grid_item, .gofundme {
+    border-radius: 7px;
 }
 
 
@@ -381,9 +381,8 @@ iframe {
     #logo {
         height: 225px;
     }
-
-
-
+    
+    
     .comparison,
     .downloads,
     .features,
