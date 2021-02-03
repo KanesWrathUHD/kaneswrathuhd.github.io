@@ -67,7 +67,6 @@ a {
 #recommendation_text,
 footer p {
     text-align: center;
-    margin-bottom: 50px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -98,6 +97,7 @@ button {
     margin-top: 10px;
     font-weight: 700;
     font-family: 'Oxanium', cursive;
+    text-align: center;
 }
 
 button:hover {
@@ -107,7 +107,8 @@ button:hover {
 
 img,
 button,
-.downloads_grid_item, .gofundme {
+.downloads_grid_item,
+.gofundme {
     border-radius: 7px;
 }
 
@@ -136,7 +137,7 @@ footer,
     margin-bottom: 150px;
 }
 
-.video{
+.video {
     margin-bottom: 150px;
 }
 
@@ -234,7 +235,7 @@ iframe {
     grid-area: 4 / 2 / 6 / 3;
 }
 
-.features_item p{
+.features_item p {
     padding-bottom: 25px;
 }
 
@@ -259,8 +260,12 @@ iframe {
     border-width: 1px;
     color: white;
     padding: 50px;
-    text-align: center;
     height: auto;
+    text-align: center;
+}
+
+.gofundme p {
+    text-align: left;
 }
 
 
@@ -272,7 +277,11 @@ iframe {
     background-color: #02A95C;
 }
 
+#gofundme_button {
+    padding-left: 40px;
+    padding-right: 40px;
 
+}
 
 
 /* ---------- DOWNLOADS ---------- */
@@ -376,8 +385,8 @@ iframe {
     #logo {
         height: 225px;
     }
-    
-    
+
+
     .comparison,
     .downloads,
     .features,
