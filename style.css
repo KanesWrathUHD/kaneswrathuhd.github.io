@@ -61,15 +61,14 @@ a {
 
 
 
-
+ 
 /* ---------- ALLIGNMENT ---------- */
 
-#recommendation_text,
-footer p {
+
+
+#recommendation_text{
+    padding-bottom: 25px;
     text-align: center;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #zone_trooper_text,
@@ -345,7 +344,10 @@ iframe {
 /* ---------- FOOTER ---------- */
 
 
-
+footer{
+    margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 
 
