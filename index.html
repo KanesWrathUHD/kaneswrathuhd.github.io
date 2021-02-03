@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="js/twentytwenty.css" type="text/css" media="screen" />
+
+
+    <script>
+        $(function() {
+            $("#comparison_container").twentytwenty();
+        });
+
+    </script>
 </head>
 
 
@@ -19,8 +41,6 @@
                 <img id="logo" src="img/logo.svg">
             </div>
         </header>
-
-
 
 
 
@@ -48,9 +68,9 @@
 
         <section class="features_grid">
             <div class="features_item">
-                <h3>BUILT USING NEURAL NETWORKS</h3>
-                <p>Using cutting edge neural networks and the very latest technology, Kane’s Wrath has been remastered in 4K.</p>
-                <img src="img/1.jpg">
+                <h3>OVER 1450+ REMASTERED IMAGES</h3>
+                <p>Using neural networks we were able to re-create the game you love and bring it to modern standards, with over 1450+ textures completed so far, this mod takes your Kane's Wrath experience to a new level.</p>
+                <img src="img/3.jpg">
             </div>
 
             <div class="features_item">
@@ -60,15 +80,15 @@
             </div>
 
             <div class="features_item">
-                <h3>OVER 1450+ REMASTERED IMAGES</h3>
-                <p>Using neural networks we were able to re-create the game you love and bring it to modern standards, with over 1450+ textures completed so far, this mod takes your Kane's Wrath experience to a new level.</p>
-                <img src="img/3.jpg">
+                <h3>ENHANCED UI AND UNIT PORTRAITS</h3>
+                <p>The user interface, including all unit portraits has been remastered and modifications have been made to make the units clearer and more desireable.</p>
+                <img src="img/4.jpg">
             </div>
 
             <div class="features_item">
-                <h3>FIXES FOR NVIDIA AND AMD CARDS</h3>
-                <p>The user interface, including all unit portraits has been remastered and modifications have been made to make the units clearer and more desireable.</p>
-                <img src="img/4.jpg">
+                <h3>FIXES OF NVIDIA AND AMD GPUS</h3>
+                <p></p>
+                <img src="img/1.jpg">
             </div>
         </section>
 
@@ -81,9 +101,12 @@
 
         <section class="padding_container">
             <section class="comparison">
-                <h3 id="before">4K TEXTURE PACK</h3>
-                <h3 id="after">STANDARD GAME</h3>
-                <img id="comparison_img" src="img/comparison.jpg" />
+                <h3 id="before">STANDARD GAME</h3>
+                <h3 id="after">4K TEXTURE PACK</h3>
+                <div id="comparison_container">
+                    <img id="comparison_img" src="img/comparison_1.jpg" />
+                    <img id="comparison_img" src="img/comparison_2.jpg" />
+                </div>
                 <p id="comparison_text">Greater dynamic range, more colour and sharper textures.</p>
             </section>
 
@@ -196,4 +219,6 @@
                 </footer>
             </section>
     </main>
-</body></html>
+</body>
+
+</html>

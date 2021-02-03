@@ -246,6 +246,10 @@ iframe {
 /* ---------- COMPARISON ---------- */
 
 
+#comparison_container{
+    width: 100%;
+}
+
 #comparison_img {
     width: 100%;
 }
@@ -335,7 +339,7 @@ iframe {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 25px;
+    grid-column-gap: 35px;
     grid-row-gap: 50px;
     padding-top: 50px;
 }
@@ -344,10 +348,25 @@ iframe {
 /* ---------- FOOTER ---------- */
 
 
-footer{
-    margin-top: 50px;
-  margin-bottom: 50px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
