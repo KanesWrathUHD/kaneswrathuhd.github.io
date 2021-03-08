@@ -312,15 +312,11 @@ iframe {
 }
 
 .downloads_grid_item:nth-child(4) {
-    grid-area: 3 / 1 / 4 / 3;
+    grid-area: 3 / 1 / 4 / 2;
 }
 
-.downloads_grid_item:nth-child(6) {
-    grid-area: 4 / 1 / 5 / 2;
-}
-
-.downloads_grid_item:nth-child(6) {
-    grid-area: 4 / 2 / 5 / 3;
+.downloads_grid_item:nth-child(5) {
+    grid-area: 3 / 2 / 4 / 3;
 }
 
 .downloads_grid_item {
